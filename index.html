@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PontyBridge University</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!--Links to relevant CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento|Quattrocento+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <!--Link from https://fontawesome.com/icons/user-astronaut?style=solid
+        Accessed: 13th October 2018-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!--Header including navbar with logo-->
+    <header>
+      <div class="navbar" id="logo">
+        <i style="font-size:3.2em;padding-top: 14px;color:#A993FF" class="fas fa-user-astronaut"></i>
+        <h1 class="navbar"><a href="index.html">University of PontyBridge</a></h1>
+      </div>
+      <nav class="navbar topnav"id="myTopnav" >
+        <ul>
+          <li><a href="contact.html">About</a></li>
+          <li><a href="index.html">News</a></li>
+          <li><a href="study.html">Study</a></li>
+          <li><a href="research.html">Research</a></li>
+          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="mainbody">
+
+      <!--large image banner with slogan-->
+      <div class="banner">
+        <img src="css/images/img1.jpg" alt="">
+        <h1>Pushing the boundaries of Higher education</h1>
+        <!--Reference used to find out how to center text over an image, whilst staying responsive
+            https://www.w3schools.com/howto/howto_css_image_text.asp
+            Accessed: 13th October 2018-->
+      </div>
+
+      <!--two blocks of information displayed inline (Study and Research Links)-->
+      <h1 style="text-align:center;border-top: 2px solid #9A55B2; margin-top:15px">What we do</h1>
+      <div class="twoboxes">
+        <div class="singlebox">
+          <img src="css/images/img2.jpg" alt="">
+          <h2>Study</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt, nulla eu consectetur facilisis, metus nulla sollicitudin diam, id porta dolor nisl ac odio. Cras vel sapien ultrices, varius tortor ut, ultricies erat. Suspendisse potenti. Pellentesque ac felis quam. Cras suscipit semper dolor ut commodo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc laoreet elit ut nulla posuere accumsan. </p>
+        </div>
+        <div class="singlebox">
+          <img src="css/images/img3.jpg" alt="">
+          <h2>Research</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt, nulla eu consectetur facilisis, metus nulla sollicitudin diam, id porta dolor nisl ac odio. Cras vel sapien ultrices, varius tortor ut, ultricies erat. Suspendisse potenti. Pellentesque ac felis quam. Cras suscipit semper dolor ut commodo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc laoreet elit ut nulla posuere accumsan. </p>
+        </div>
+      </div>
+      <!--quote from alumni with image floating right-->
+      <h1 style="text-align:center;">Some words from our Graduates...</h1>
+      <div class="mainquote">
+        <div class="mainquoteinline">
+          <h1>I look back on my time here fondly as a time when I could afford to buy things</h1>
+          <p>- Evelyn. Q. Dot, class of 2018</p>
+        </div>
+        <img class="mainquoteinline"src="css/images/img7.jpg" alt="">
+      </div>
+      <!--three blocks of information displayed inline (3 news links)-->
+      <h1 style="text-align:center;">NEWS</h1>
+      <div class="headlines">
+        <div class="headlinesbox">
+          <img src="css/images/img4.jpg" alt="">
+          <h2>Victory at inter-university games</h2>
+        </div>
+        <div class="headlinesbox">
+          <img src="css/images/img5.jpg" alt="">
+          <h2>Graduation Success</h2>
+        </div>
+        <div class="headlinesbox">
+          <img src="css/images/img6.jpg" alt="">
+          <h2>Staff rewarded</h2>
+        </div>
+
+      </div>
+
+
+    </div>
+      <!--Footer including navbar with logo-->
+      <footer>
+          <nav class="footerbar">
+            <ul>
+              <li><a href="contact.html">About</a></li>
+              <li><a href="study.html">Study</a></li>
+              <li><a href="research.html">Research</a></li>
+            </ul>
+          </nav>
+          <div class="footerbar logo">
+            <i style="font-size:3.2em;padding-top: 14px;color:#A993FF" class="fas fa-user-astronaut"></i>
+            <h1 class="footerbar"><a href="index.html">University of PontyBridge</a></h1>
+          </div>
+      </footer>
+
+
+    <script>
+       function myFunction() {
+           var x = document.getElementById("myTopnav");
+           if (x.className === "topnav") {
+               x.className += " responsive";
+           } else {
+               x.className = "topnav";
+           }
+       }
+     </script>
+  </body>
+</html>

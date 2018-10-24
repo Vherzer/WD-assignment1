@@ -1,0 +1,249 @@
+/*
+Clients font and colour requests;
+light purple #A993FF
+medium purple #9A55B2
+dark purple #791B99
+Headings font-family: 'Quattrocento', serif;
+Body font-family: 'Quattrocento Sans', sans-serif;
+*/
+/*CSS AFFECTING WHOLE BODY */
+body, *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*CSS for header - consistant on every page */
+header{
+  font-family: 'Quattrocento', serif;
+  background-color:  black;
+  border-bottom: 2px solid #9A55B2;
+  border-top: 2px solid #9A55B2;
+  height: 110px;
+}
+header a {
+  text-decoration: none;
+  color: #9A55B2;
+}
+header a:hover{
+  color: #A993FF;
+}
+header a:active{
+  color: #A993FF;
+  text-decoration: underline;
+}
+header li{
+  display: inline;
+  flex-wrap: wrap;
+  list-style: none;
+  font-size: 25px;
+  padding: 10px;
+  margin:10px;
+  border: 0.5px solid #A993FF;
+  border-radius: 10px;
+
+}
+header nav{
+  float: right;
+  margin-top: 27px;
+  padding-right: 10px;
+}
+.navbar{
+  display: inline;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+/*TEST*/
+.topnav{
+  overflow: hidden;
+}
+.topnav .icon{
+  display: none;
+}
+@media screen and (max-width: 928px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 928px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive  {
+    display: block;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    float: none;
+  }
+}
+
+
+
+/*CSS for footer - consistant on every page */
+footer{
+  background-color: #A2A5A8;
+  font-family: 'Quattrocento', serif;
+  width: 100%;
+  align-content: flex-end;
+  height: 110px;
+  margin-top: 50px;
+  padding-bottom: 20px;
+  border-top: 2px solid #9A55B2;
+  border-bottom: 2px solid #9A55B2;
+}
+footer li{
+  list-style: none;
+  font-size: 20px;
+  text-decoration: underline;
+  padding: 2px;
+}
+footer a {
+  text-decoration: none;
+  color: #9A55B2;
+}
+footer a:hover{
+  color: #A993FF;
+}
+footer nav{
+  float: left;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.footerbar{
+  display: inline;
+  flex-wrap: wrap;
+}
+.logo{
+  float: right;
+  margin-top: 0;
+  margin-right: 10px;
+
+}
+/*CSS for outer box containing blocks of information on index page */
+.mainbody{
+  margin: 15px;
+}
+.mainbody h1, h2{
+  font-family: 'Quattrocento', serif;
+}
+.mainbody p{
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+/*CSS for banner on index page */
+.banner img{
+  width: 100%;
+  max-height: 1000px;
+  max-width: 1100px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.banner h1{
+  position: absolute;
+  color: #A993FF;
+  font-size: 3em;
+  -webkit-text-stroke: 1px black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*CSS for 2 boxes on index page */
+.twoboxes{
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  border-bottom: 2px solid #9A55B2;
+
+}
+.twoboxes h2 , p {
+  padding-top: 10px;
+}
+.singlebox{
+  margin: 10px;
+  padding: 10px;
+  position: relative;
+  float: left;
+  max-width:  520px;
+}
+/*accessed: 23 October to make images of different sizes the same size
+https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-different-height-and-width-the-same-via-css
+*/
+.singlebox img{
+  width: 100%;
+  max-width:  540px;
+  min-height: 333px;
+  max-height: 500px;
+  background-position: 50% 50%;
+  background-repeat:   no-repeat;
+  background-size:     cover;
+}
+
+/*CSS for student quote on index page */
+.mainquote{
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  border-bottom: 2px solid #9A55B2;
+  padding-bottom: 50px;
+
+}
+.mainquote img{
+  width: 100%;
+  max-width:  540px;
+  height: auto;
+  max-height: 500px;
+}
+.mainquoteinline{
+  display: inline;
+  flex-wrap: wrap;
+  max-width: 500px;
+}
+.mainquoteinline > h1{
+  padding-right: 30px;
+}
+@media screen and (max-width: 1109px) {
+  .mainquote img{
+    display: none;
+  }
+}
+/*CSS for News on index page */
+.headlines{
+  max-width: 1700px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.headlines img{
+  width: 300px;
+  height: 300px;
+
+}
+.headlinesbox{
+  display: inline-flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  height: auto;
+  width: 350px;
+  margin-top: 30px;
+
+}
