@@ -164,8 +164,8 @@ footer nav{
 
 /*CSS for 2 boxes on index page */
 .twoboxes{
-  margin-top: 30px;
-  padding-top: 30px;
+  margin-top: 10px;
+  padding-top: 0px;
   padding-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
@@ -196,7 +196,18 @@ https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-differ
   background-repeat:   no-repeat;
   background-size:     cover;
 }
-
+.singlebox a{
+  text-decoration: none;
+  color: black;
+}
+.singlebox a:hover{
+  color: #791B99;
+  background-color: #791B99;
+}
+.singlebox a h2:hover{
+  color: #791B99;
+  text-decoration: underline;
+}
 /*CSS for student quote on index page */
 .mainquote{
   display: flex;
@@ -220,16 +231,42 @@ https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-differ
 .mainquoteinline > h1{
   padding-right: 30px;
 }
+.mainquote button{
+  margin-top: 30px;
+  margin-right: 5px;
+  padding: 5px;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 13px;
+}
+.mainquote p{
+  padding-top: 25px;
+}
 @media screen and (max-width: 1109px) {
   .mainquote img{
     display: none;
+  }
+  .headlinesbox{
+    display: inline-flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    height: auto;
+    width: 350px;
+    margin-top: 30px;
+    margin: 25px;
+    padding: 25px;
+  }
+  .headlines img{
+    width: 500px;
+    height: 500px;
+
   }
 }
 /*CSS for News on index page */
 .headlines{
   max-width: 1700px;
   height: auto;
-  display: flex;
+  display:flex;
+  flex-wrap: wrap;
   justify-content: center;
   position: relative;
 }
@@ -245,5 +282,8 @@ https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-differ
   height: auto;
   width: 350px;
   margin-top: 30px;
+  margin: 5px;
+  padding: 5px;
+
 
 }
