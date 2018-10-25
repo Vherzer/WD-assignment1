@@ -304,20 +304,35 @@ https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-differ
 .courseboxesinline{
   display: inline;
   flex-wrap: wrap;
+
 }
 .courseboxes img{
 max-height: 400px;
+max-width: 500px;
 padding: 20px;
 }
 .courseboxes p{
   max-width: 400px;
 }
+.courseboxes h2{
+  padding: 20px;
+}
 .courseboxes{
-  width: 1200px;
-  border: 1px solid black;
+  width: 1000px;
+
   display: flex;
   flex-wrap: wrap;
 }
 #architecture{
-  padding: 100px;
+  padding: 45px;
+}
+#roaddesign{
+  padding: 45px;
+}
+#landscaping{
+  padding: 45px;
+}
+@media screen and (max-width: 1109px) {
+  .courseboxes{
+    width: 600px;
 }
