@@ -95,7 +95,7 @@ header nav{
 
 /*CSS for footer - consistant on every page */
 footer{
-  background-color: #A2A5A8;
+  background-color: black;
   font-family: 'Quattrocento', serif;
   width: 100%;
   align-content: flex-end;
@@ -151,7 +151,7 @@ footer nav{
   text-align: center;
   display: block;
   margin: 0 auto;
-}
+}/*
 .banner h1{
   position: absolute;
   color: #A993FF;
@@ -161,7 +161,21 @@ footer nav{
   left: 50%;
   transform: translate(-50%, -50%);
 }
+*/
+.banner{
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+}
+.banner .content{
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgb(0, 0, 0, 0.5);
+  color: #A993FF;
 
+  padding: 20px;
+}
 /*CSS for 2 boxes on index page */
 .twoboxes{
   margin-top: 10px;
@@ -284,6 +298,26 @@ https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-differ
   margin-top: 30px;
   margin: 5px;
   padding: 5px;
+}
 
-
+/*CSS FOR STUDY PAGE*/
+.courseboxesinline{
+  display: inline;
+  flex-wrap: wrap;
+}
+.courseboxes img{
+max-height: 400px;
+padding: 20px;
+}
+.courseboxes p{
+  max-width: 400px;
+}
+.courseboxes{
+  width: 1200px;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+#architecture{
+  padding: 100px;
 }

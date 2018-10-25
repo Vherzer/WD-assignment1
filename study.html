@@ -32,69 +32,24 @@
     </header>
 
     <div class="mainbody">
-
-      <!--large image banner with slogan-->
-      <div class="banner">
-        <img src="css/images/img1.jpg" alt="">
-        <div class="content">
-        <h1>Pushing the boundaries of Higher education</h1>
-        <!--Reference used to find out how to center text over an image, whilst staying responsive
-            https://www.w3schools.com/howto/howto_css_image_text.asp
-            Accessed: 13th October 2018-->
-        </div>
-      </div>
-
-      <!--two blocks of information displayed inline (Study and Research Links)-->
-      <h1 style="text-align:center;border-top: 2px solid #9A55B2; margin-top:15px; padding-top:35px;">What we do:</h1>
-      <div class="twoboxes">
-        <div class="singlebox">
-          <a href="study.html">
-            <img src="css/images/img2.jpg" alt="">
-            <h2>Study</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt, nulla eu consectetur facilisis, metus nulla sollicitudin diam, id porta dolor nisl ac odio. Cras vel sapien ultrices, varius tortor ut, ultricies erat. Suspendisse potenti. Pellentesque ac felis quam. Cras suscipit semper dolor ut commodo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc laoreet elit ut nulla posuere accumsan. </p>
-          </a>
-        </div>
-        <div class="singlebox">
-          <a href="research.html">
-            <img src="css/images/img3.jpg" alt="">
-            <h2>Research</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt, nulla eu consectetur facilisis, metus nulla sollicitudin diam, id porta dolor nisl ac odio. Cras vel sapien ultrices, varius tortor ut, ultricies erat. Suspendisse potenti. Pellentesque ac felis quam. Cras suscipit semper dolor ut commodo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc laoreet elit ut nulla posuere accumsan. </p>
-          </a>
-        </div>
-      </div>
-      <!--quote from alumni with image floating right-->
-      <h1 style="text-align:center; padding-top:35px;">Some words from our Graduates...</h1>
-      <div class="mainquote">
-        <div class="mainquoteinline">
-          <h1>I look back on my time here fondly as a time when I could afford to buy things</h1>
-          <p>- Evelyn. Q. Dot, class of 2018</p>
-          <button onclick="typeWriter()">Click for more Alumni Quotes</button>
-          <p id="typeEffect"></p>
-        </div>
-        <img class="mainquoteinline"src="css/images/img7.jpg" alt="">
-      </div>
-      <!--three blocks of information displayed inline (3 news links)-->
-      <h1 id ="news"style="text-align:center;padding-top:35px;">NEWS</h1>
-      <div class="headlines">
-        <div class="headlinesbox">
-          <img src="css/images/img4.jpg" alt="">
-          <h2>Victory at inter-university games</h2>
+      <h1>Take a look at the courses we offer</h1>
+      <div class="courseboxes">
+        <img class="courseboxesinline"src="css/images/img8.jpg" alt="">
+        <div class="courseboxesinline" id="architecture">
+          <h2>Architecture</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac accumsan ipsum. Sed ut tristique tortor. Donec nec orci a orci pulvinar bibendum eget id diam. Suspendisse fringilla elit lectus, ac tincidunt odio ornare in. Donec massa magna, mollis vitae elit in, molestie convallis mi. Donec suscipit porttitor mi, a rhoncus diam varius sit amet. Quisque finibus magna sed ex egestas tristique. Pellentesque posuere felis dui. Integer mollis nec metus sit amet faucibus.</p>
         </div>
-        <div class="headlinesbox">
-          <img src="css/images/img5.jpg" alt="">
-          <h2>Graduation Success</h2>
+        <img class="courseboxesinline"src="css/images/img9.jpg" alt="">
+        <div class="courseboxesinline" id="roaddesign">
+          <h2>Road Design</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac accumsan ipsum. Sed ut tristique tortor. Donec nec orci a orci pulvinar bibendum eget id diam. Suspendisse fringilla elit lectus, ac tincidunt odio ornare in. Donec massa magna, mollis vitae elit in, molestie convallis mi. Donec suscipit porttitor mi, a rhoncus diam varius sit amet. Quisque finibus magna sed ex egestas tristique. Pellentesque posuere felis dui. Integer mollis nec metus sit amet faucibus.</p>
         </div>
-        <div class="headlinesbox">
-          <img src="css/images/img6.jpg" alt="">
-          <h2>Staff rewarded</h2>
+        <img class="courseboxesinline"src="css/images/img10.jpg" alt="">
+        <div class="courseboxesinline" id="landscaping">
+          <h2>Landscaping</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac accumsan ipsum. Sed ut tristique tortor. Donec nec orci a orci pulvinar bibendum eget id diam. Suspendisse fringilla elit lectus, ac tincidunt odio ornare in. Donec massa magna, mollis vitae elit in, molestie convallis mi. Donec suscipit porttitor mi, a rhoncus diam varius sit amet. Quisque finibus magna sed ex egestas tristique. Pellentesque posuere felis dui. Integer mollis nec metus sit amet faucibus.</p>
         </div>
-
       </div>
-
-
     </div>
       <!--Footer including navbar with logo-->
       <footer>
@@ -121,19 +76,6 @@
            } else {
                x.className = "topnav";
            }
-       }
-    //javascript function for typewriter effect in graduate quote section on index
-    // --Reference
-    //https://www.w3schools.com/howto/howto_js_typewriter.asp accessed 25th October 2018
-       var i = 0;
-       var txt = "Once I ate a book - Arthur. J. Block, class of 2017";
-       var speed = "40";
-       function typeWriter() {
-         if (i < txt.length) {
-           document.getElementById("typeEffect").innerHTML += txt.charAt(i);
-           i++;
-           setTimeout(typeWriter, speed);
-         }
        }
      </script>
   </body>
