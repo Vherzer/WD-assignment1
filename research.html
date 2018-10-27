@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PontyBridge University</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!--Links to relevant CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento|Quattrocento+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <!--Link from https://fontawesome.com/icons/user-astronaut?style=solid
+        Accessed: 13th October 2018-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!--Link from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav for button on responsive nav bar
+        Accessed: 26th October 2018-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!--Header including navbar with logo-->
+    <header>
+      <div class="navbar navbarinline" id="logo">
+        <i style="font-size:3.2em;padding-top: 14px;color:#A993FF" class="fas fa-user-astronaut"></i>
+        <h1 class="navbar"><a href="index.html">University of PontyBridge</a></h1>
+      </div>
+      <div class="topnav navbarinline" id="myTopnav">
+        <a href="contact.html">About</a>
+        <a href="index.html#news">News</a>
+        <a href="study.html">Study</a>
+        <a href="research.html">Research</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+    <div class="mainbody">
+      <h1 class="researchtext">Take a look at the research we do...</h1>
+      <div class="courseboxes">
+        <img class="courseboxesinline"src="css/images/img8.jpg" alt="">
+        <div class="courseboxesinline" id="architecture">
+          <h2> Blockchain Research</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac accumsan ipsum. Sed ut tristique tortor. Donec nec orci a orci pulvinar bibendum eget id diam. Suspendisse fringilla elit lectus, ac tincidunt odio ornare in. Donec massa magna, mollis vitae elit in, molestie convallis mi. Donec suscipit porttitor mi, a rhoncus diam varius sit amet. Quisque finibus magna sed ex egestas tristique. Pellentesque posuere felis dui. Integer mollis nec metus sit amet faucibus.</p>
+        </div>
+        <img id="rd1" class="courseboxesinline"src="css/images/img9.jpg" alt="">
+        <div class="courseboxesinline" id="roaddesign">
+          <h2>Sustainable Technology </h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac accumsan ipsum. Sed ut tristique tortor. Donec nec orci a orci pulvinar bibendum eget id diam. Suspendisse fringilla elit lectus, ac tincidunt odio ornare in. Donec massa magna, mollis vitae elit in, molestie convallis mi. Donec suscipit porttitor mi, a rhoncus diam varius sit amet. Quisque finibus magna sed ex egestas tristique. Pellentesque posuere felis dui. Integer mollis nec metus sit amet faucibus.</p>
+        </div>
+        <img id="rd2" class="courseboxesinline"src="css/images/img9.jpg" alt="">
+        <img class="courseboxesinline"src="css/images/img10.jpg" alt="">
+        <div class="courseboxesinline" id="landscaping">
+          <h2>Science stuff</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac accumsan ipsum. Sed ut tristique tortor. Donec nec orci a orci pulvinar bibendum eget id diam. Suspendisse fringilla elit lectus, ac tincidunt odio ornare in. Donec massa magna, mollis vitae elit in, molestie convallis mi. Donec suscipit porttitor mi, a rhoncus diam varius sit amet. Quisque finibus magna sed ex egestas tristique. Pellentesque posuere felis dui. Integer mollis nec metus sit amet faucibus.</p>
+        </div>
+      </div>
+    </div>
+    <!--Footer including navbar with logo-->
+    <footer>
+        <nav class="footerbar">
+          <ul>
+            <li><a href="contact.html">About</a></li>
+            <li><a href="study.html">Study</a></li>
+            <li><a href="research.html">Research</a></li>
+          </ul>
+        </nav>
+        <div class="footerbar logo">
+          <i style="font-size:3.2em;padding-top: 14px;color:#A993FF" class="fas fa-user-astronaut"></i>
+          <h1 class="footerbar"><a href="index.html">University of PontyBridge</a></h1>
+        </div>
+    </footer>
+    <script>
+    //javascript for header navigator to minimize and hide
+       function myFunction() {
+           var x = document.getElementById("myTopnav");
+           if (x.className === "topnav") {
+               x.className += " responsive";
+           } else {
+               x.className = "topnav";
+           }
+       }
+     </script>
+  </body>
+</html>

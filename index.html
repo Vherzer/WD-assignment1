@@ -11,32 +11,37 @@
     <!--Link from https://fontawesome.com/icons/user-astronaut?style=solid
         Accessed: 13th October 2018-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!--Link from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav for button on responsive nav bar
+        Accessed: 26th October 2018-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <!--Header including navbar with logo-->
     <header>
-      <div class="navbar" id="logo">
+      <div class="navbar navbarinline" id="logo">
         <i style="font-size:3.2em;padding-top: 14px;color:#A993FF" class="fas fa-user-astronaut"></i>
         <h1 class="navbar"><a href="index.html">University of PontyBridge</a></h1>
       </div>
-      <nav class="navbar topnav"id="myTopnav" >
-        <ul>
-          <li><a href="contact.html">About</a></li>
-          <li><a href="#news">News</a></li>
-          <li><a href="study.html">Study</a></li>
-          <li><a href="research.html">Research</a></li>
-          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-        </ul>
-      </nav>
+      <div class="topnav navbarinline" id="myTopnav">
+        <a href="contact.html">About</a>
+        <a href="index.html#news">News</a>
+        <a href="study.html">Study</a>
+        <a href="research.html">Research</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
     </header>
 
-    <div class="mainbody">
 
+    <div class="mainbody">
       <!--large image banner with slogan-->
       <div class="banner">
         <img src="css/images/img1.jpg" alt="">
         <div class="content">
+          <!--Reference used to find out how to center text over an image
+              https://www.w3schools.com/howto/howto_css_image_transparent.asp
+              Accessed: 27th October 2018-->
         <h1>Pushing the boundaries of Higher education</h1>
         <!--Reference used to find out how to center text over an image, whilst staying responsive
             https://www.w3schools.com/howto/howto_css_image_text.asp
@@ -114,14 +119,15 @@
 
     <script>
     //javascript for header navigator to minimize and hide
-       function myFunction() {
-           var x = document.getElementById("myTopnav");
-           if (x.className === "topnav") {
-               x.className += " responsive";
-           } else {
-               x.className = "topnav";
-           }
+    // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav accessed 26th Oct
+    function myFunction() {
+       var x = document.getElementById("myTopnav");
+       if (x.className === "topnav") {
+           x.className += " responsive";
+       } else {
+           x.className = "topnav";
        }
+      }
     //javascript function for typewriter effect in graduate quote section on index
     // --Reference
     //https://www.w3schools.com/howto/howto_js_typewriter.asp accessed 25th October 2018
