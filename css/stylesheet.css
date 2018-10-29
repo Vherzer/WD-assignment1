@@ -1,11 +1,11 @@
-/*
-Clients font and colour requests;
-light purple #A993FF
-medium purple #9A55B2
-dark purple #791B99
-Headings font-family: 'Quattrocento', serif;
-Body font-family: 'Quattrocento Sans', sans-serif;
-*/
+/******************************************************
+*  Clients font and colour requests;
+*    light purple #A993FF
+*    medium purple #9A55B2
+*    dark purple #791B99
+*  Headings font-family: 'Quattrocento', serif;
+*  Body font-family: 'Quattrocento Sans', sans-serif;
+*******************************************************/
 /*CSS AFFECTING WHOLE BODY */
 body, *{
   padding: 0;
@@ -182,7 +182,7 @@ footer nav{
   width: 100%;
   max-height: 1000px;
   height: auto;
-  max-width: 1200px;
+  max-width: 1500px;
   text-align: center;
   margin: 0 auto;
 }
@@ -191,7 +191,6 @@ footer nav{
   width: 100%;
   height: auto;
   margin: 0 auto;
-
 }
 .banner .content{
   position: absolute;
@@ -200,6 +199,7 @@ footer nav{
   background: rgb(0, 0, 0, 0.5);
   color: #A993FF;
   padding: 20px;
+  margin-bottom: 5px;
 }
 @media screen and (max-width:416px) {
   .banner .content{
@@ -291,12 +291,6 @@ https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-differ
     display: none;
   }
   .headlinesbox{
-    display: inline-flex;
-    flex-wrap: wrap;
-    border: 1px solid black;
-    height: auto;
-    width: 350px;
-    margin-top: 30px;
     margin: 25px;
     padding: 25px;
   }
@@ -312,13 +306,13 @@ https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-differ
   height: auto;
   display:flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   position: relative;
 }
 .headlines img{
   width: 300px;
   height: 300px;
-
+  padding: 10px 0px 15px 45px;
 }
 .headlinesbox{
   display: inline-flex;
@@ -331,6 +325,9 @@ https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-differ
   padding: 5px;
 }
 
+.headlines h2, p{
+  padding: 5px 20px;
+}
 /*CSS FOR STUDY PAGE*/
 .allcourses{
   background-color: #A993FF;
@@ -379,7 +376,7 @@ https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-differ
 #rd1{
   display: none;
 }
-@media screen and (max-width: 1109px) {
+@media screen and (max-width: 1060px) {
   .courseboxes{
     width: 600px;
   }
