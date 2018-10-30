@@ -23,7 +23,7 @@
         <h1 class="navbar"><a href="index.html">University of PontyBridge</a></h1>
       </div>
       <div class="topnav navbarinline" id="myTopnav">
-        <a href="contact.html">About</a>
+        <a href="contact.html" class="active">About</a>
         <a href="index.html#news">News</a>
         <a href="study.html">Study</a>
         <a href="research.html">Research</a>
@@ -33,13 +33,73 @@
       </div>
     </header>
     <div class="mainbody">
-      <h1>Get in contact with us:</h1>
-      <div class="contact" id="googleMap" style="width:500px;height:400px;"></div>
-      <div class="contact">
-        <p>email: kafjlkjfsd</p>
-        <p></p>
+      <h1>Contact us:</h1>
+      <!--GoogleMaps API-->
+      <!--https://developers.google.com/maps/documentation/javascript/adding-a-google-map -->
+      <!--https://developers.google.com/maps/documentation/javascript/get-api-key-->
+      <div class="contact" id="googleMap" style="width:400px;height:300px;"></div>
+      <div class="contact" id="contactinfo">
+        <h2>General Enquiries:</h2>
+        <div class="address">
+          <p>University of PontyBridge <br>Imaginary Road <br>IM66 3PB <br> <br>Phone: +44 (0)11 1011 1000 </p>
+        </div>
+      </div>
+      <div  id="browserhint">
+        <p>Expand the browser to find us on the map...</p>
       </div>
 
+      <!--ADMISSIONS INFORMATION-->
+      <!--All the text in the following application section is modified from https://www.cardiff.ac.uk/study/undergraduate/applying/how-to-apply
+          Accessed 29th October-->
+      <div class="admissionsbox">
+        <h2>Admissions Information</h2><br>
+        <p>admissions@pointybridge.ac.uk</p>
+        <p>+44 (0)1 1111 1112</p>
+        <p>Before you apply:</p> <br>
+        <ul>
+          <li>Search for a <a href="study.html">course</a></li>
+          <li>Check the UCAS application deadlines (under 'Application deadlines' on this page)</li>
+          <li>Check the specific entry requirements and admissions criteria for your course</li>
+          <li>Some courses may involve attending an interview, sitting a test or submitting a portfolio - if required this will be stated in the entry requirements</li>
+        </ul><br>
+        <h2>Application Deadlines</h2> <br>
+        <p>15th January for all courses</p>
+        <p>Applications from overseas students (non EU) will be accepted through UCAS up until 30 June. However, it is recommended that you apply as early as possible.</p> <br>
+        <h2>Receiving your Offer</h2> <br>
+        <p>UCAS will contact you by email or letter once you have at least one offer. If you are offered a place, your offer will be either unconditional or conditional:</p>
+        <br>
+        <ul>
+          <li>Unconditional offers - This means that you have met all the academic requirements and we are happy to accept you.</li>
+          <li>Conditional offers - This means that we will offer you a place if you meet certain conditions which are usually based on your exams or an English language test. Once you have met the conditions and accepted your place through UCAS, your offer will become unconditional.</li>
+        </ul>
+      </div>
+      <!--CONTACT FORM FOR APPLICANTS-->
+      <!--https://www.w3schools.com/howto/howto_css_contact_form.asp
+          Accessed 29th October-->
+          <h1>APPLICATIONS OPEN -- APPLY HERE--</h1>
+      <div class="contactform">
+        <form action="">
+         <label for="fname">First Name</label>
+          <input type="text" name="fname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" name="lname" placeholder="Your last name..">
+          <label for="program">What type of program are you applying to</label>
+          <select id="program" name="program">
+            <option value="undergrad">Undergraduate</option>
+            <option value="postgrad">Postgraduate</option>
+            <option value="phd">PHd</option>
+          </select>
+          <label for="course">Which course are you applying to</label>
+          <select id="course" name="course">
+            <option value="Architecture">Architecture</option>
+            <option value="RoadDesign">Road Design</option>
+            <option value="Landscaping">Landscaping</option>
+          </select>
+          <label for="ps">Personal Statement</label>
+          <textarea name="ps" style="height:200px;"placeholder="Enter your personal statement here. Please make sure it stays under the 400 word limit."></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
     </div>
     <!--Footer including navbar with logo-->
     <footer>

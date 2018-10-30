@@ -12,6 +12,7 @@ body, *{
   margin: 0;
   box-sizing: border-box;
 }
+/******************************************************
 /*CSS for header - consistant on every page */
 header{
   font-family: 'Quattrocento', serif;
@@ -54,7 +55,9 @@ header a:hover{
   font-size: 22px;
   color: #9A55B2;
 }
-
+.topnav .active{
+  text-decoration: underline;
+}
 .topnav a:hover {
   background-color: black;
   color: #A993FF;
@@ -112,7 +115,7 @@ header a:hover{
     margin-right: 15px;
   }
 }
-
+/****************************************************
 /*CSS for footer - consistant on every page */
 footer{
   background-color: black;
@@ -167,6 +170,7 @@ footer nav{
     width: 100%;
   }
 }
+/****************************************************
 /*CSS for outer box containing blocks of information on index page */
 .mainbody{
   margin: 15px;
@@ -177,6 +181,7 @@ footer nav{
 .mainbody p{
   font-family: 'Quattrocento Sans', sans-serif;
 }
+/****************************************************
 /*CSS for banner on index page */
 .banner img{
   width: 100%;
@@ -207,6 +212,7 @@ footer nav{
     font-size: 12px;
   }
 }
+/****************************************************
 /*CSS for 2 boxes on index page */
 .twoboxes{
   margin-top: 10px;
@@ -221,6 +227,9 @@ footer nav{
 }
 .twoboxes h2 , p {
   padding-top: 10px;
+}
+.twoboxes h2{
+  padding-left: 20px;
 }
 .singlebox{
   margin: 10px;
@@ -253,6 +262,7 @@ https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-differ
   color: #791B99;
   text-decoration: underline;
 }
+/****************************************************
 /*CSS for student quote on index page */
 .mainquote{
   display: flex;
@@ -300,6 +310,7 @@ https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-differ
 
   }
 }
+/****************************************************
 /*CSS for News on index page */
 .headlines{
   max-width: 1700px;
@@ -328,9 +339,10 @@ https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-differ
 .headlines h2, p{
   padding: 5px 20px;
 }
+/****************************************************
 /*CSS FOR STUDY PAGE*/
 .allcourses{
-  background-color: #A993FF;
+  background-color: #D3D3D3;
   padding: 20px;
 }
 .allcourses h1, h2{
@@ -342,6 +354,9 @@ https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-differ
 .allcourses2{
   background-color: white;
   border: 2px solid #9A55B2;
+}
+.studytext{
+    padding-bottom: 10px;
 }
 .courseboxesinline{
   display: inline;
@@ -357,6 +372,8 @@ https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-differ
 }
 .courseboxes h2{
   padding: 20px;
+  text-decoration: underline;
+
 }
 .courseboxes{
   width: 1000px;
@@ -376,6 +393,32 @@ https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-differ
 #rd1{
   display: none;
 }
+
+.howtoapply{
+  position:fixed;
+  background-color: #00CF88;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  margin-bottom: 100px;
+  height: 60px;
+  margin-top: 40px;
+  padding-top: 15px;
+}
+.howtoapply i {
+  padding: 15px 10px 5px 10px;
+  display: inline;
+  color: white;
+}
+.howtoapply h2{
+  padding: 15px 10px 5px 10px;
+  display: inline;
+  color: white;
+}
+.howtoapply a{
+  text-decoration: none;
+}
 @media screen and (max-width: 1060px) {
   .courseboxes{
     width: 600px;
@@ -385,5 +428,123 @@ https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-differ
   }
   #rd1{
     display: block;
+  }
+}
+@media screen and (max-width: 665px) {
+  .studytext{
+    font-size: 20px;
+  }
+  .allcourses2{
+    max-width: 400px;
+  }
+  .courseboxes{
+    max-width: 400px;
+  }
+  .courseboxes img{
+    max-height: 200px;
+    max-width: 300px;
+    padding: 15px;
+  }
+  .courseboxes h2{
+    padding: 2px 2px 2px 20px;
+
+  }
+}
+@media screen and (max-width: 375px) {
+  .allcourses2{
+    max-width: 320px;
+  }
+  .courseboxes{
+    max-width: 320px;
+  }
+  .courseboxes img{
+    max-height: 150px;
+    max-width: 200px;
+    padding: 10px 15px 0px 0px ;
+  }
+  .allcourses h2{
+    font-size: 15px;
+    padding-left: 20px
+  }
+  .allcourses p{
+    font-size: 13px;
+  }
+}
+/****************************************************
+/*CSS FOR CONTACT PAGE*/
+.contact{
+  display: inline-flex;
+}
+#contactinfo{
+  border: 2px solid black;
+  padding: 45px;
+  float: right;
+  background-color: #D3D3D3;
+}
+.admissionsbox{
+  max-width: 1500px;
+  border: 1px solid #A993FF;
+  padding:25px;
+  display: inline-block;
+  margin: 30px 20px;
+
+}
+.admissionsbox li{
+  font-family: 'Quattrocento Sans', sans-serif;
+  margin-left: 45px;
+}
+#browserhint{
+  float: right;
+  padding: 20px;
+}
+.contactform{
+  border: 3px solid #A993FF;
+  max-width: 1500px;
+  padding: 25px;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+@media screen and (max-width: 955px) {
+  #googleMap{
+    display: none;
+    margin-right: 30px;
+  }
+  #contactinfo{
+    width: 100%
+  }
+}
+@media screen and (max-width: 543px) {
+  #contactinfo{
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 955px) {
+  #browserhint{
+  display: none;
   }
 }
