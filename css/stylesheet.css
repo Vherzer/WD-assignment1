@@ -123,7 +123,6 @@ footer{
   width: 100%;
   align-content: flex-end;
   height: 110px;
-  margin-top: 50px;
   padding-bottom: 20px;
   border-top: 2px solid #9A55B2;
   border-bottom: 2px solid #9A55B2;
@@ -348,6 +347,9 @@ https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-differ
 .allcourses h1, h2{
  font-family: 'Quattrocento', serif;
 }
+.allcourses a{
+  color: #791B99;
+}
 .allcourses p{
   font-family: 'Quattrocento Sans', sans-serif;
 }
@@ -365,7 +367,7 @@ https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-differ
 .courseboxes img{
   max-height: 400px;
   max-width: 500px;
-  padding: 20px;
+  padding: 20px 10px;
 }
 .courseboxes p{
   max-width: 400px;
@@ -376,10 +378,11 @@ https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-differ
 
 }
 .courseboxes{
-  width: 1000px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 1400px;
 }
 #architecture{
   padding: 45px;
@@ -393,17 +396,17 @@ https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-differ
 #rd1{
   display: none;
 }
-
+/*https://forum.webflow.com/t/when-scrolling-make-an-element-fixed-only-within-a-specific-section/49182
+how to make div stick to bottom of page (similar to fixed) yet stop above footer
+Accessed: 30th October*/
 .howtoapply{
-  position:fixed;
+  position:sticky;
   background-color: #00CF88;
   bottom: 0;
   left: 0;
   right: 0;
   color: white;
-  margin-bottom: 100px;
   height: 60px;
-  margin-top: 40px;
   padding-top: 15px;
 }
 .howtoapply i {
@@ -419,9 +422,14 @@ https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-differ
 .howtoapply a{
   text-decoration: none;
 }
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1036px) {
+  .courseboxes p{
+    padding: 10px 10px
+  }
+}
+@media screen and (max-width: 1033px) {
   .courseboxes{
-    width: 600px;
+    width: 500px;
   }
   #rd2{
     display: none;
@@ -474,6 +482,7 @@ https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-differ
 /*CSS FOR CONTACT PAGE*/
 .contact{
   display: inline-flex;
+  margin-left: 10px;
 }
 #contactinfo{
   border: 2px solid black;
@@ -483,11 +492,14 @@ https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-differ
 }
 .admissionsbox{
   max-width: 1500px;
-  border: 1px solid #A993FF;
+  border: 2px solid #A993FF;
   padding:25px;
   display: inline-block;
   margin: 30px 20px;
 
+}
+.admissionsbox a {
+  color: #791B99;
 }
 .admissionsbox li{
   font-family: 'Quattrocento Sans', sans-serif;
@@ -497,11 +509,15 @@ https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-differ
   float: right;
   padding: 20px;
 }
+#apptext{
+  text-align: center;
+}
 .contactform{
-  border: 3px solid #A993FF;
+  border: 5px solid #A993FF;
   max-width: 1500px;
   padding: 25px;
   font-family: 'Quattrocento Sans', sans-serif;
+  margin: 30px 20px;
 }
 input[type=text], select, textarea {
   width: 100%;
@@ -514,7 +530,7 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: #00CF88;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -529,7 +545,7 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
-@media screen and (max-width: 955px) {
+@media screen and (max-width: 963px) {
   #googleMap{
     display: none;
     margin-right: 30px;
@@ -543,8 +559,47 @@ input[type=submit]:hover {
     padding: 10px;
   }
 }
-@media screen and (min-width: 955px) {
+@media screen and (min-width: 963px) {
   #browserhint{
   display: none;
+  }
+}
+/****************************************************
+/*CSS FOR RESEARCH PAGE*/
+.researchtext{
+  display: none;
+}
+@media screen and (min-width: 1034px) {
+  .containerresearchtext{
+    position: relative;
+    width: 50%;
+  }
+  .researchimage{
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  .researchtext{
+    display: absolute
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .containerresearchtext:hover img{
+    opacity: 0.3;
+  }
+  .containerresearchtext:hover .researchtext{
+    opacity: 1;
+  }
+  .researchtext2{
+    background-color: #A993FF;
+    color: black;
+    font-size: 12px;
+    padding: 15px 30px;
   }
 }
