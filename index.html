@@ -1,26 +1,36 @@
 <!DOCTYPE html>
-<!--Link to my GitHub repository for this assignment:
-    https://github.com/Vherzer/WD-assignment1-->
+<!--
+    Link to my GitHub repository for this assignment:
+    https://github.com/Vherzer/WD-assignment1
+-->
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PontyBridge University</title>
     <link rel="shortcut icon" href="favicon.ico" />
-    <!--Links to relevant CSS-->
-    <link href="https://fonts.googleapis.com/css?family=Quattrocento|Quattrocento+Sans" rel="stylesheet">
+
+    <!--Links to relevant CSS including Googlefont-->
     <link rel="stylesheet" href="css/stylesheet.css">
-    <!--Link from https://fontawesome.com/icons/user-astronaut?style=solid
-        Accessed: 13th October 2018-->
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento|Quattrocento+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <!--Link from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav for button on responsive nav bar
-        Accessed: 26th October 2018-->
+    <!--
+        Link from fontawesome  - no date
+        Accessed 13 October 2018
+        https://fontawesome.com/icons/user-astronaut?style=solid
+        Needed for icon usage (astronaut icon in header and footer)
+    -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--All filler text from: https://www.lipsum.com/
-        Accessed 23rd October 2018-->
+    <!--
+        Link from W3Schools  - no date
+        Accessed 26 October 2018
+        https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav
+        Needed for button on responsive navbar
+    -->
   </head>
   <body>
-    <!--Header including navbar with logo-->
+    <!--Header including logo with responsive navbar
+          - consistant on every page-->
     <header>
       <div class="navbar navbarinline" id="logo">
         <i style="font-size:3.2em;padding-top: 14px;color:#A993FF" class="fas fa-user-astronaut"></i>
@@ -37,41 +47,61 @@
       </div>
     </header>
 
-
     <div class="mainbody">
-      <!--large image banner with slogan-->
+
+      <!--large image banner with slogan overlay-->
       <div class="banner">
-        <img src="css/images/img1.jpg" alt="">
-        <!--https://www.pexels.com/photo/library-university-books-students-12064/
-            Accessed October 30th 2018-->
+        <img src="css/images/img1.jpg" alt="big library">
+        <!--
+            Title: No-name (Library Image)
+            Licence: Pexels License
+            Author:Tamás  Mészáros
+            Author_link: https://www.pexels.com/@repuding
+            Image_link: https://www.pexels.com/photo/library-university-books-students-12064/
+          -->
         <div class="content">
-          <!--Reference used to find out how to center text over an image
+          <!--
+              This code was taken from a Stack Overflow post by Simon Arnold Oct 16. 2013
+              Accessed: 27 October 2018
               https://www.w3schools.com/howto/howto_css_image_transparent.asp
-              Accessed: 27th October 2018-->
+              Reference used to find out how hover text over an image.
+            -->
         <h1>Pushing the boundaries of Higher education</h1>
-        <!--Reference used to find out how to center text over an image, whilst staying responsive
-            https://www.w3schools.com/howto/howto_css_image_text.asp
-            Accessed: 13th October 2018-->
         </div>
       </div>
 
-      <!--two blocks of information displayed inline (Study and Research Links)-->
+      <!--two boxes of information displayed inline - "what we do" section (Study and Research Links)-->
       <h1 style="text-align:center;border-top: 2px solid #9A55B2; margin-top:15px; padding-top:35px;">What we do:</h1>
       <div class="twoboxes">
         <div class="singlebox">
           <a href="study.html">
-            <img src="css/images/img2.jpg" alt="">
-            <!--https://www.pexels.com/photo/pen-writing-notes-studying-8769/
-                Accessed October 30th 2018-->
+            <img src="css/images/img2.jpg" alt="pen on paper">
+            <!--
+                Title: No-name (Pen writing Image)
+                Licence: CC0 License
+                Author:Tookapic
+                Author_link: https://www.pexels.com/@tookapic
+                Image_link: https://www.pexels.com/photo/library-university-books-students-12064/
+              -->
             <h2>Study</h2>
+            <!--
+                All filler text from Lipsum - no date
+                Accessed: 23 October 2018
+                https://www.lipsum.com/
+              -->
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt, nulla eu consectetur facilisis, metus nulla sollicitudin diam, id porta dolor nisl ac odio. Cras vel sapien ultrices, varius tortor ut, ultricies erat. Suspendisse potenti. Pellentesque ac felis quam. Cras suscipit semper dolor ut commodo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc laoreet elit ut nulla posuere accumsan. </p>
           </a>
         </div>
         <div class="singlebox">
           <a href="research.html">
-            <img src="css/images/img3.jpg" alt="">
-            <!--https://www.pexels.com/photo/people-coffee-meeting-team-7096/
-                Accessed 30th October 2018-->
+            <img src="css/images/img3.jpg" alt="taking notes">
+            <!--
+                Title: No-name (Team meeting Image)
+                Licence: CC0 License
+                Author: Startup Stock Photos
+                Author_link: https://www.pexels.com/@startup-stock-photos
+                Image_link: https://www.pexels.com/photo/people-coffee-meeting-team-7096/
+              -->
             <h2>Research</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt, nulla eu consectetur facilisis, metus nulla sollicitudin diam, id porta dolor nisl ac odio. Cras vel sapien ultrices, varius tortor ut, ultricies erat. Suspendisse potenti. Pellentesque ac felis quam. Cras suscipit semper dolor ut commodo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc laoreet elit ut nulla posuere accumsan. </p>
           </a>
@@ -88,33 +118,53 @@
           <button onclick="typeWriter()">Click for more Alumni Quotes</button>
           <p id="typeEffect"></p>
         </div>
-        <img class="mainquoteinline"src="css/images/img7.jpg" alt="">
-        <!--https://www.pexels.com/photo/woman-wearing-purple-mortar-board-and-academic-robe-1448258/
-        Accessed 30th October 2018-->
+        <img class="mainquoteinline" src="css/images/img7.jpg" alt="graduate">
+        <!--
+            Title: No-name (Smiling Graduate Image)
+            Licence: Pexels License
+            Author: Brandi Ama Doyal
+            Author_link: https://www.pexels.com/@brandi-ama-doyal-643271
+            Image_link: https://www.pexels.com/photo/woman-wearing-purple-mortar-board-and-academic-robe-1448258/
+          -->
       </div>
 
 
       <!--three blocks of information displayed inline (3 news links)-->
-      <h1 id ="news"style="text-align:center;padding-top:35px;">NEWS</h1>
+      <h1 id ="news" style="text-align:center;padding-top:35px;">NEWS</h1>
       <div class="headlines">
         <div class="headlinesbox">
-          <img src="css/images/img4.jpg" alt="">
-            <!--https://www.pexels.com/photo/group-of-lacrosse-players-celebrating-with-coach-during-daytime-159728/
-            Accessed 30th October 2018-->
+          <img src="css/images/img4.jpg" alt="lacrosse team winners">
+            <!--
+                Title: No-name (Lacrosse team celebrating Image)
+                Licence: CC0 License
+                Author: Pixabay
+                Author_link: https://www.pexels.com/@pixabay
+                Image_link: https://www.pexels.com/photo/group-of-lacrosse-players-celebrating-with-coach-during-daytime-159728/
+              -->
           <h2>Victory at inter-university games</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac accumsan ipsum. Sed ut tristique tortor. Donec nec orci a orci pulvinar bibendum eget id diam. Suspendisse fringilla elit lectus, ac tincidunt odio ornare in. Donec massa magna, mollis vitae elit in, molestie convallis mi. Donec suscipit porttitor mi, a rhoncus diam varius sit amet. Quisque finibus magna sed ex egestas tristique. Pellentesque posuere felis dui. Integer mollis nec metus sit amet faucibus.</p>
         </div>
         <div class="headlinesbox">
-          <img src="css/images/img5.jpg" alt="">
-            <!--https://www.pexels.com/photo/accomplishment-ceremony-education-graduation-267885/
-            Accessed 30th October 2018-->
+          <img src="css/images/img5.jpg" alt="graduation celebration">
+            <!--
+                Title: No-name (Graduates celebrating Image)
+                Licence: CC0 License
+                Author: Pixabay
+                Author_link: https://www.pexels.com/@pixabay
+                Image_link: https://www.pexels.com/photo/accomplishment-ceremony-education-graduation-267885/
+              -->
           <h2>Graduation Success</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac accumsan ipsum. Sed ut tristique tortor. Donec nec orci a orci pulvinar bibendum eget id diam. Suspendisse fringilla elit lectus, ac tincidunt odio ornare in. Donec massa magna, mollis vitae elit in, molestie convallis mi. Donec suscipit porttitor mi, a rhoncus diam varius sit amet. Quisque finibus magna sed ex egestas tristique. Pellentesque posuere felis dui. Integer mollis nec metus sit amet faucibus.</p>
         </div>
         <div class="headlinesbox">
-          <img src="css/images/img6.jpg" alt="">
-          <!--https://www.pexels.com/photo/group-hand-fist-bump-1068523/
-              Accessed 30th October 2018-->
+          <img src="css/images/img6.jpg" alt="staff fistbumping">
+          <!--
+              Title: No-name (Group Fistbump Image)
+              Licence: Pexels License
+              Author: Rawpixel.com
+              Author_link: https://www.pexels.com/@rawpixel
+              Image_link: https://www.pexels.com/photo/group-hand-fist-bump-1068523/
+            -->
           <h2>Staff rewarded</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac accumsan ipsum. Sed ut tristique tortor. Donec nec orci a orci pulvinar bibendum eget id diam. Suspendisse fringilla elit lectus, ac tincidunt odio ornare in. Donec massa magna, mollis vitae elit in, molestie convallis mi. Donec suscipit porttitor mi, a rhoncus diam varius sit amet. Quisque finibus magna sed ex egestas tristique. Pellentesque posuere felis dui. Integer mollis nec metus sit amet faucibus.</p>
         </div>
@@ -123,7 +173,8 @@
 
 
     </div>
-      <!--Footer including navbar with logo-->
+      <!--Footer including logo and navbar which dissapears when browser is minimized.
+          - consistant on every page-->
       <footer>
           <nav class="footerbar">
             <ul>
@@ -140,8 +191,12 @@
 
 
     <script>
-    //javascript for header navigator to minimize and hide
-    // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav accessed 26th Oct
+    /*
+        This code was taken from W3Schools  - no date
+        Accessed: 26 October 2018
+        https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav
+        Reference used minimize navbar in header and hamburger it.
+    */
     function myFunction() {
        var x = document.getElementById("myTopnav");
        if (x.className === "topnav") {
@@ -150,9 +205,12 @@
            x.className = "topnav";
        }
       }
-    //javascript function for typewriter effect in graduate quote section on index
-    // --Reference
-    //https://www.w3schools.com/howto/howto_js_typewriter.asp accessed 25th October 2018
+      /*
+          This code was taken from W3Schools  - no date
+          Accessed: 25 October 2018
+          https://www.w3schools.com/howto/howto_js_typewriter.asp
+          Reference used to create a fun typewriter effect in graduate quote section.
+      */
        var i = 0;
        var txt = "Once I ate a book - Arthur. J. Block, class of 2017";
        var speed = "40";

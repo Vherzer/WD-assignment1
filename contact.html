@@ -5,18 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PontyBridge University</title>
     <link rel="shortcut icon" href="favicon.ico" />
-    <!--Links to relevant CSS-->
-    <link href="https://fonts.googleapis.com/css?family=Quattrocento|Quattrocento+Sans" rel="stylesheet">
+
+    <!--Links to relevant CSS including Googlefont-->
     <link rel="stylesheet" href="css/stylesheet.css">
-    <!--Link from https://fontawesome.com/icons/user-astronaut?style=solid
-        Accessed: 13th October 2018-->
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento|Quattrocento+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <!--Link from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav for button on responsive nav bar
-        Accessed: 26th October 2018-->
+    <!--
+        Link from fontawesome  - no date
+        Accessed 13 October 2018
+        https://fontawesome.com/icons/user-astronaut?style=solid
+        Needed for icon usage (astronaut icon in header and footer)
+    -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--
+        Link from W3Schools  - no date
+        Accessed 26 October 2018
+        https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav
+        Needed for button on responsive navbar
+    -->
   </head>
   <body>
-    <!--Header including navbar with logo-->
+    <!--Header including logo with responsive navbar
+          - consistant on every page-->
     <header>
       <div class="navbar navbarinline" id="logo">
         <i style="font-size:3.2em;padding-top: 14px;color:#A993FF" class="fas fa-user-astronaut"></i>
@@ -35,8 +45,13 @@
     <div class="mainbody">
       <h1>Contact us:</h1>
       <!--GoogleMaps API-->
-      <!--https://developers.google.com/maps/documentation/javascript/adding-a-google-map -->
-      <!--https://developers.google.com/maps/documentation/javascript/get-api-key-->
+      <!--
+          This code was taken from Google Maps Platform Oct 29. 2018
+          Accessed: 29 October 2018
+          https://developers.google.com/maps/documentation/javascript/adding-a-google-map
+          https://developers.google.com/maps/documentation/javascript/get-api-key
+          Reference used to import and learn about GoogleMaps API.
+        -->
       <div class="contact" id="googleMap" style="width:400px;height:300px;"></div>
       <div class="contact" id="contactinfo">
         <h2>General Enquiries:</h2>
@@ -49,12 +64,19 @@
       </div>
 
       <!--ADMISSIONS INFORMATION-->
-      <!--All the text in the following application section is modified from https://www.cardiff.ac.uk/study/undergraduate/applying/how-to-apply
-          Accessed 29th October-->
+      <!--
+          All the text in the following application section is modified from Cardiff University Website - no date
+          Accessed: 29 October 2018
+          https://www.cardiff.ac.uk/study/undergraduate/applying/how-to-apply
+        -->
       <div class="admissionsbox">
         <h1> Admissions Information</h1><br>
-        <!--How to make a direkt link to email
-            Accessed 29th October-->
+        <!--
+            Link from W3Schools  - no date
+            Accessed 29 October 2018
+            hhttps://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_mailto
+            How to make a direkt link to email address.
+        -->
         <a href="mailto:admissions@pointybridge.ac.uk?" target="_top"><p>admissions@pointybridge.ac.uk</p></a>
         <p>+44 (0)1 1111 1112</p>
         <p>Before you apply:</p> <br>
@@ -76,14 +98,18 @@
         </ul>
       </div>
       <!--CONTACT FORM FOR APPLICANTS-->
-      <!--https://www.w3schools.com/howto/howto_css_contact_form.asp
-          Accessed 29th October-->
-          <h1 id="apptext">APPLICATIONS OPEN -- APPLY HERE--</h1>
+      <!--
+          This code was taken from W3Schools -  no date
+          Accessed: 29 October 2018
+          https://www.w3schools.com/howto/howto_css_contact_form.asp
+          modified code to create a contact form for applicants relevant to page.
+        -->
+      <h1 id="apptext">APPLICATIONS OPEN -- APPLY HERE--</h1>
       <div class="contactform">
-        <form action="">
-         <label for="fname">First Name</label>
+        <form>
+         <label>First Name</label>
           <input type="text" name="fname" placeholder="Your name..">
-          <label for="lname">Last Name</label>
+          <label>Last Name</label>
           <input type="text" name="lname" placeholder="Your last name..">
           <label for="program">What type of program are you applying to?</label>
           <select id="program" name="program">
@@ -97,13 +123,16 @@
             <option value="film">Film</option>
             <option value="rocketsci">Rocket Science</option>
           </select>
-          <label for="ps">Personal Statement</label>
-          <textarea name="ps" style="height:200px;"placeholder="Enter your personal statement here. Please make sure it stays under the 400 word limit."></textarea>
+          <label>Personal Statement</label>
+          <textarea name="ps" style="height:200px;" placeholder="Enter your personal statement here. Please make sure it stays under the 400 word limit."></textarea>
           <input type="submit" value="Submit">
         </form>
       </div>
     </div>
-    <!--Footer including navbar with logo-->
+
+
+    <!--Footer including logo and navbar which dissapears when browser is minimized.
+        - consistant on every page-->
     <footer>
         <nav class="footerbar">
           <ul>
@@ -118,7 +147,12 @@
         </div>
     </footer>
     <script>
-    //javascript for header navigator to minimize and hide
+    /*
+        This code was taken from W3Schools  - no date
+        Accessed: 26 October 2018
+        https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav
+        Reference used minimize navbar in header and hamburger it.
+    */
        function myFunction() {
            var x = document.getElementById("myTopnav");
            if (x.className === "topnav") {

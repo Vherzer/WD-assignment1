@@ -5,21 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PontyBridge University</title>
     <link rel="shortcut icon" href="favicon.ico" />
-    <!--Links to relevant CSS-->
-    <link href="https://fonts.googleapis.com/css?family=Quattrocento|Quattrocento+Sans" rel="stylesheet">
+
+    <!--Links to relevant CSS including Googlefont-->
     <link rel="stylesheet" href="css/stylesheet.css">
-    <!--Link from https://fontawesome.com/icons/user-astronaut?style=solid
-        Accessed: 13th October 2018-->
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento|Quattrocento+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <!--Link from https://fontawesome.com/icons/user-astronaut?style=solid
-        Accessed: 28th October 2018-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-    <!--Link from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav for button on responsive nav bar
-        Accessed: 26th October 2018-->
+    <!--
+        Link from fontawesome  - no date
+        Accessed 13 October 2018
+        https://fontawesome.com/icons/user-astronaut?style=solid
+        Needed for icon usage (astronaut icon in header and footer)
+    -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--
+        Link from W3Schools  - no date
+        Accessed 26 October 2018
+        https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav
+        Needed for button on responsive navbar
+    -->
   </head>
   <body>
-    <!--Header including navbar with logo-->
+    <!--Header including logo with responsive navbar
+          - consistant on every page-->
     <header>
       <div class="navbar navbarinline" id="logo">
         <i style="font-size:3.1em;padding-top: 14px;color:#A993FF" class="fas fa-user-astronaut"></i>
@@ -40,22 +47,41 @@
         <h1 class="studytext">Take a look at the courses we offer:</h1>
         <div class="allcourses2">
           <div class="courseboxes">
-            <img class="courseboxesinline"src="css/images/img8.jpg" alt="">
-            <!--https://www.pexels.com/photo/coding-computer-data-depth-of-field-577585/
-                Accessed: 30th October 2018-->
+            <img class="courseboxesinline" src="css/images/img8.jpg" alt="code seen through glasses">
+            <!--
+                Title: No-name (Computer depth Image)
+                Licence: Pexels License
+                Author: Kevin Ku
+                Author_link: https://www.pexels.com/@kevin-ku-92347
+                Image_link: https://www.pexels.com/photo/coding-computer-data-depth-of-field-577585/
+              -->
             <div class="courseboxesinline" id="compsci">
               <h2> MSc in Computer Science</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac accumsan ipsum. Sed ut tristique tortor. Donec nec orci a orci pulvinar bibendum eget id diam. Suspendisse fringilla elit lectus, ac tincidunt odio ornare in. Donec massa magna, mollis vitae elit in, molestie convallis mi. Donec suscipit porttitor mi, a rhoncus diam varius sit amet. Quisque finibus magna sed ex egestas tristique. Pellentesque posuere felis dui. Integer mollis nec metus sit amet faucibus.</p>
               <p><a href="#">Go to course site --></a></p>
             </div>
-            <img id="rd1" class="courseboxesinline"src="css/images/img9.jpg" alt="">
+            <img id="rd1" class="courseboxesinline" src="css/images/img9.jpg" alt="film camera">
+            <!--
+                Title: No-name (Film Camera Image)
+                Licence: Pexels License
+                Author: Donald Tong
+                Author_link: https://www.pexels.com/@donaldtong94
+                Image_link: https://www.pexels.com/photo/camera-event-live-settings-66134/
+              -->
             <div class="courseboxesinline" id="film">
               <h2>MA in Film</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac accumsan ipsum. Sed ut tristique tortor. Donec nec orci a orci pulvinar bibendum eget id diam. Suspendisse fringilla elit lectus, ac tincidunt odio ornare in. Donec massa magna, mollis vitae elit in, molestie convallis mi. Donec suscipit porttitor mi, a rhoncus diam varius sit amet. Quisque finibus magna sed ex egestas tristique. Pellentesque posuere felis dui. Integer mollis nec metus sit amet faucibus.</p>
               <p><a href="#">Go to course site --></a></p>
             </div>
-            <img id="rd2" class="courseboxesinline"src="css/images/img9.jpg" alt="">
-            <img class="courseboxesinline"src="css/images/img10.jpg" alt="">
+            <img id="rd2" class="courseboxesinline" src="css/images/img9.jpg" alt="film camera">
+            <img class="courseboxesinline" src="css/images/img10.jpg" alt="rocket take off">
+            <!--
+                Title: No-name (Rocket Take off Image)
+                Licence: CC0 License
+                Author: Pixabay
+                Author_link: https://www.pexels.com/@pixabay
+                Image_link: https://www.pexels.com/photo/flight-sky-earth-space-2159/
+              -->
             <!--https://www.pexels.com/photo/flight-sky-earth-space-2159/
                 Accessed: 30th October 2018-->
             <div class="courseboxesinline" id="rocketsci">
@@ -69,10 +95,11 @@
 
       <div class="howtoapply">
         <h2>Click here to apply</h2>
-        <a href="contact.html"><i style="font-size:1.6em;"class="fas fa-arrow-circle-right"></i></a>
+        <a href="contact.html"><i style="font-size:1.6em;" class="fas fa-arrow-circle-right"></i></a>
       </div>
 
-      <!--Footer including navbar with logo-->
+      <!--Footer including logo and navbar which dissapears when browser is minimized.
+          - consistant on every page-->
       <footer>
           <nav class="footerbar">
             <ul>
@@ -90,7 +117,12 @@
 
 
     <script>
-    //javascript for header navigator to minimize and hide
+    /*
+        This code was taken from W3Schools  - no date
+        Accessed: 26 October 2018
+        https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav
+        Reference used minimize navbar in header and hamburger it.
+    */
        function myFunction() {
            var x = document.getElementById("myTopnav");
            if (x.className === "topnav") {

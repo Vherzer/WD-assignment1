@@ -6,15 +6,19 @@
 *  Headings font-family: 'Quattrocento', serif;
 *  Body font-family: 'Quattrocento Sans', sans-serif;
 *******************************************************/
-/*CSS AFFECTING WHOLE BODY */
+
+/*CSS AFFECTING WHOLE BODY ACROSS ALL PAGES */
 body, *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-/******************************************************
-/*CSS for header - consistant on every page */
-header{
+/*****************************************************************************
+
+  CSS for header including logo with responsive navbar
+        - consistant on every page
+*/
+header {
   font-family: 'Quattrocento', serif;
   background-color:  #292526;
   border-bottom: 2px solid #9A55B2;
@@ -23,21 +27,23 @@ header{
   color:#9A55B2;
 }
 
-header a:hover{
+header a:hover {
   color: #A993FF;
 }
 
-.navbar{
+.navbar {
   display: inline-flex;
   flex-wrap: wrap;
 }
-.navbar i{
+
+.navbar i {
   padding-left: 10px;
 }
 
-.navbarinline{
+.navbarinline {
   display: inline;
 }
+
 .topnav {
   overflow: hidden;
   margin-bottom: 50px;
@@ -56,9 +62,11 @@ header a:hover{
   color: #9A55B2;
   border-radius: 16%;
 }
-.topnav .active{
+
+.topnav .active {
   text-decoration: underline;
 }
+
 .topnav a:hover {
   background-color: black;
   color: #A993FF;
@@ -91,43 +99,50 @@ header a:hover{
     display: block;
     text-align: left;
   }
-  .topnav a:hover{
+  .topnav a:hover {
     background-color: #292526;
   }
 }
+
 @media screen and (max-width: 900px) {
-  header h1{
+  header h1 {
     font-size: 20px;
     margin-right: 20px;
   }
-  .topnav a{
+  .topnav a {
     font-size: 18px;
     padding-top: 20px;
+
   }
 }
+
 @media screen and (max-width: 450px) {
-  header h1{
+  header h1 {
     font-size: 15px;
     margin-right: 5px;;
   }
-  .topnav a{
+  .topnav a {
     font-size: 13px;
     padding-top: 22px;
     padding-right: 0px;
   }
-  .topnav .icon{
+  .topnav .icon {
     margin-right: 5px;
   }
 }
+
 @media screen and (max-width: 330px) {
-  header h1{
+  header h1 {
     font-size: 14px;
     margin-right: 0px;;
   }
 }
-/****************************************************
-/*CSS for footer - consistant on every page */
-footer{
+/*****************************************************************************
+
+  CSS for footer including logo and navbar which dissapears when browser is minimized.
+      - consistant on every page
+*/
+footer {
   background-color: #292526;
   font-family: 'Quattrocento', serif;
   width: 100%;
@@ -138,62 +153,74 @@ footer{
   border-bottom: 2px solid #9A55B2;
 }
 
-footer li{
+footer li {
   list-style: none;
   font-size: 20px;
   text-decoration: underline;
   padding: 2px;
 }
+
 footer a {
   text-decoration: none;
   color: #9A55B2;
   font-size: 20px;
 }
-footer a:hover{
+
+footer a:hover {
   color: #A993FF;
 }
-footer nav{
+
+footer nav {
   float: left;
   padding-left: 20px;
   padding-top: 20px;
 }
-.footerbar{
+
+.footerbar {
   display: inline;
   flex-wrap: wrap;
 }
-.logo{
+
+.logo {
   float: right;
   margin-top: 0;
   margin-right: 10px;
 
 }
+
 @media screen and (max-width: 516px) {
-  footer li{
+  footer li {
   display: none
   }
-  footer .logo{
+  footer .logo {
     padding-right: 20px;
   }
 }
 @media screen and (max-width: 615px) {
-  footer{
+  footer {
     width: 100%;
   }
 }
-/****************************************************
-/*CSS for outer box containing blocks of information on index page */
-.mainbody{
+/*****************************************************************************
+
+    CSS for outer (white) box containing blocks of information on index page
+*/
+.mainbody {
   margin: 15px;
 }
-.mainbody h1, h2{
+
+.mainbody h1, h2 {
   font-family: 'Quattrocento', serif;
 }
-.mainbody p{
+
+.mainbody p {
   font-family: 'Quattrocento Sans', sans-serif;
 }
-/****************************************************
-/*CSS for banner on index page */
-.banner img{
+/*****************************************************************************
+
+    CSS for banner with image and slogan overlay on index page
+*/
+.banner img {
   width: 100%;
   max-height: 1000px;
   height: auto;
@@ -201,13 +228,15 @@ footer nav{
   text-align: center;
   margin: 0 auto;
 }
-.banner{
+
+.banner {
   position: relative;
   width: 100%;
   height: auto;
   margin: 0 auto;
 }
-.banner .content{
+
+.banner .content {
   position: absolute;
   bottom: 0;
   background: rgb(0, 0, 0);
@@ -216,42 +245,50 @@ footer nav{
   padding: 20px;
   margin-bottom: 5px;
 }
+
 @media screen and (max-width:416px) {
-  .banner .content{
+  .banner .content {
     padding: 15px;
     font-size: 12px;
   }
 }
-/****************************************************
-/*CSS for 2 boxes on index page */
-.twoboxes{
+/*****************************************************************************
+
+    CSS for "what we do" section (2 boxes) on index page
+*/
+.twoboxes {
   margin-top: 10px;
   padding-top: 0px;
   padding-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
   border-bottom: 2px solid #9A55B2;
-
 }
+
 .twoboxes h2 , p {
   padding-top: 10px;
 }
-.twoboxes h2{
+
+.twoboxes h2 {
   padding-left: 20px;
 }
-.singlebox{
+
+.singlebox {
   margin: 10px;
   padding: 10px;
   position: relative;
   float: left;
   max-width:  520px;
 }
-/*accessed: 23 October to make images of different sizes the same size
-https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-different-height-and-width-the-same-via-css
+
+/*
+    This code was taken from a Stack Overflow post by Simon Arnold Oct 16. 2013
+    Accessed: 23 October 2018
+    https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-different-height-and-width-the-same-via-CSS
+    How to make images of different sizes the same size in the same div.
 */
-.singlebox img{
+.singlebox img {
   width: 100%;
   max-width:  540px;
   min-height: 333px;
@@ -260,69 +297,82 @@ https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-differ
   background-repeat:   no-repeat;
   background-size:     cover;
 }
-.singlebox a{
+
+.singlebox a {
   text-decoration: none;
   color: black;
 }
-.singlebox a:hover{
+
+.singlebox a:hover {
   color: #791B99;
   background-color: #791B99;
 }
-.singlebox a h2:hover{
+
+.singlebox a h2:hover {
   color: #791B99;
   text-decoration: underline;
 }
-/****************************************************
-/*CSS for student quote on index page */
-.mainquote{
+/*****************************************************************************
+
+    CSS for student quote on index page with image which dissapears on mobile screen
+*/
+
+.mainquote {
   display: flex;
   justify-content: center;
   padding-top: 50px;
   border-bottom: 2px solid #9A55B2;
   padding-bottom: 50px;
-
 }
-.mainquote img{
+
+.mainquote img {
   width: 100%;
-  max-width:  540px;
+  max-width: 540px;
   height: auto;
   max-height: 500px;
 }
-.mainquoteinline{
+
+.mainquoteinline {
   display: inline;
   flex-wrap: wrap;
   max-width: 500px;
 }
-.mainquoteinline > h1{
+
+.mainquoteinline h1 {
   padding-right: 30px;
 }
-.mainquote button{
+
+.mainquote button {
   margin-top: 30px;
   margin-right: 5px;
   padding: 5px;
   font-family: 'Quattrocento Sans', sans-serif;
   font-size: 13px;
 }
-.mainquote p{
+
+.mainquote p {
   padding-top: 25px;
 }
+
 @media screen and (max-width: 1109px) {
-  .mainquote img{
+  .mainquote img {
     display: none;
   }
-  .headlinesbox{
+  .headlinesbox {
     margin: 25px;
     padding: 25px;
   }
-  .headlines img{
+  .headlines img {
     width: 500px;
     height: 500px;
 
   }
 }
-/****************************************************
-/*CSS for News on index page */
-.headlines{
+/*****************************************************************************
+
+    CSS for News on index page (three contianers floating inline with image and text)
+*/
+.headlines {
   max-width: 1700px;
   height: auto;
   display:flex;
@@ -330,12 +380,14 @@ https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-differ
   justify-content: space-around;
   position: relative;
 }
-.headlines img{
+
+.headlines img {
   width: 325px;
   height: 325px;
   padding: 5px 1px 15px 15px;
 }
-.headlinesbox{
+
+.headlinesbox {
   display: inline-flex;
   flex-wrap: wrap;
   border: 1px solid black;
@@ -346,71 +398,91 @@ https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-differ
   padding: 5px;
 }
 
-.headlines h2, p{
+.headlines h2, p {
   padding: 5px 20px;
 }
-/****************************************************
-/*CSS FOR STUDY PAGE*/
-.allcourses{
+/*****************************************************************************
+
+    CSS FOR STUDY PAGE - including images, text and static apply button fixed to bottom
+*/
+
+.allcourses {
   background-color: #D3D3D3;
   padding: 20px;
 }
-.allcourses h1, h2{
+
+.allcourses h1, h2 {
  font-family: 'Quattrocento', serif;
 }
-.allcourses a{
+
+.allcourses a {
   color: #791B99;
 }
-.allcourses p{
+
+.allcourses p {
   font-family: 'Quattrocento Sans', sans-serif;
 }
-.allcourses2{
+
+.allcourses2 {
   background-color: white;
   border: 2px solid #9A55B2;
 }
-.studytext{
+
+.studytext {
     padding-bottom: 10px;
 }
-.courseboxesinline{
+
+.courseboxesinline {
   display: inline;
   flex-wrap: wrap;
 }
-.courseboxes img{
+
+.courseboxes img {
   max-height: 400px;
   max-width: 500px;
   padding: 20px 10px;
 }
-.courseboxes p{
+
+.courseboxes p {
   max-width: 400px;
 }
-.courseboxes h2{
+
+.courseboxes h2 {
   padding: 20px;
   text-decoration: underline;
-
 }
-.courseboxes{
+
+.courseboxes {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 1400px;
 }
-#compsci{
+
+#compsci {
   padding: 45px;
 }
-#film{
+
+#film {
   padding: 45px;
 }
-#rocketsci{
+
+#rocketsci {
   padding: 45px;
 }
-#rd1{
+
+#rd1 {
   display: none;
 }
-/*https://forum.webflow.com/t/when-scrolling-make-an-element-fixed-only-within-a-specific-section/49182
-how to make div stick to bottom of page (similar to fixed) yet stop above footer
-Accessed: 30th October*/
-.howtoapply{
+
+/*
+    This code was taken from a Webflow community post  answered by Waldo(Webflow Staff) Oct. 2017.
+    Accessed: 30th October 2018
+    https://forum.webflow.com/t/when-scrolling-make-an-element-fixed-only-within-a-specific-section/49182
+    How to make div stick to bottom of page (similar to fixed) yet stop above footer
+*/
+.howtoapply {
   position:sticky;
   background-color: #00CF88;
   bottom: 0;
@@ -420,89 +492,102 @@ Accessed: 30th October*/
   height: 60px;
   padding-top: 15px;
 }
+
 .howtoapply i {
   padding: 15px 10px 5px 10px;
   display: inline;
   color: white;
 }
-.howtoapply h2{
+
+.howtoapply h2 {
   padding: 15px 10px 5px 10px;
   display: inline;
   color: white;
 }
-.howtoapply a{
+
+.howtoapply a {
   text-decoration: none;
 }
+
 @media screen and (max-width: 1036px) {
-  .courseboxes p{
+  .courseboxes p {
     padding: 10px 10px
   }
 }
+
 @media screen and (max-width: 1033px) {
-  .courseboxes{
+  .courseboxes {
     width: 500px;
   }
-  #rd2{
+  #rd2 {
     display: none;
   }
-  #rd1{
+  #rd1 {
     display: block;
   }
 }
+
 @media screen and (max-width: 665px) {
-  .studytext{
+  .studytext {
     font-size: 20px;
   }
-  .allcourses2{
+  .allcourses2 {
     max-width: 400px;
   }
-  .courseboxes{
+  .courseboxes {
     max-width: 400px;
   }
-  .courseboxes img{
+  .courseboxes img {
     max-height: 200px;
     max-width: 300px;
     padding: 15px;
   }
-  .courseboxes h2{
+  .courseboxes h2 {
     padding: 2px 2px 2px 20px;
 
   }
 }
+
 @media screen and (max-width: 375px) {
-  .allcourses2{
+  .allcourses2 {
     max-width: 320px;
   }
-  .courseboxes{
+  .courseboxes {
     max-width: 320px;
   }
-  .courseboxes img{
+  .courseboxes img {
     max-height: 150px;
     max-width: 200px;
     padding: 10px 15px 0px 0px ;
   }
-  .allcourses h2{
+  .allcourses h2 {
     font-size: 15px;
     padding-left: 20px
   }
-  .allcourses p{
+  .allcourses p {
     font-size: 13px;
   }
 }
-/****************************************************
-/*CSS FOR CONTACT PAGE*/
-.contact{
+
+/*****************************************************************************
+
+    CSS FOR CONTACT PAGE - Address box with googleMaps API which appears in large browsers
+                         - Admissions information with application form
+*/
+.contact {
   display: inline-flex;
   margin-left: 10px;
 }
-#contactinfo{
+
+#contactinfo {
   border: 2px solid black;
   padding: 45px;
   margin-right: 15px;
   float: left;
   background-color: #D3D3D3;
 }
-.admissionsbox{
+
+.admissionsbox {
   max-width: 1500px;
   border: 2px solid #A993FF;
   padding:25px;
@@ -510,27 +595,33 @@ Accessed: 30th October*/
   margin: 30px 20px;
 
 }
+
 .admissionsbox a {
   color: #791B99;
 }
-.admissionsbox li{
+
+.admissionsbox li {
   font-family: 'Quattrocento Sans', sans-serif;
   margin-left: 45px;
 }
-#browserhint{
+
+#browserhint {
   float: right;
   padding: 20px;
 }
-#apptext{
+
+#apptext {
   text-align: center;
 }
-.contactform{
+
+.contactform {
   border: 5px solid #A993FF;
   max-width: 1500px;
   padding: 25px;
   font-family: 'Quattrocento Sans', sans-serif;
   margin: 30px 20px;
 }
+
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -541,6 +632,7 @@ input[type=text], select, textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
+
 input[type=submit] {
   background-color: #00CF88;
   color: white;
@@ -549,64 +641,76 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
+
 input[type=submit]:hover {
   background-color: #45a049;
 }
+
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
 }
-#googleMap{
+
+#googleMap {
   float:right;
   margin-right: 30px;
-
 }
+
 @media screen and (max-width: 1008px) {
-  #contactinfo{
+  #contactinfo {
     padding: 20px;
   }
-  #googleMap{
+  #googleMap {
     margin-right: 10px;
   }
 }
-@media screen and (max-width: 946px) {
-  #googleMap{
-    display: none;
 
+@media screen and (max-width: 946px) {
+  #googleMap {
+    display: none;
   }
-  #contactinfo{
+  #contactinfo {
     width: 100%
   }
 }
+
 @media screen and (max-width: 543px) {
-  #contactinfo{
+  #contactinfo {
     padding: 5px;
   }
 }
+
 @media screen and (min-width: 947px) {
-  #browserhint{
+  #browserhint {
   display: none;
   }
 }
-/****************************************************
-/*CSS FOR RESEARCH PAGE*/
-.researchtext{
+/*****************************************************************************
+
+    CSS FOR RESEARCH PAGE - Same layout as study page but with hover effect over left images.
+*/
+.researchtext {
   display: none;
 }
-/* https://www.w3schools.com/howto/howto_css_image_overlay.asp
-  Accessed October 29th*/
+/*
+    This code was taken and modified from w3schools tutorial - no date
+    Accessed: 29th October 2018
+    https://www.w3schools.com/howto/howto_css_image_overlay.asp
+    How to make hover effect over image which reveals info box.
+*/
 @media screen and (min-width: 1034px) {
-  .containerresearchtext{
+  .containerresearchtext {
     position: relative;
     width: 50%;
   }
-  .researchimage{
+  .researchimage {
     opacity: 1;
     transition: .5s ease;
     backface-visibility: hidden;
   }
-  .researchtext{
+
+  .researchtext {
     display: block;
     transition: .5s ease;
     opacity: 0;
@@ -617,13 +721,16 @@ input[type=submit]:hover {
     -ms-transform: translate(-50%, -50%);
     text-align: center;
   }
-  .containerresearchtext:hover img{
+
+  .containerresearchtext:hover img {
     opacity: 0.3;
   }
-  .containerresearchtext:hover .researchtext{
+
+  .containerresearchtext:hover .researchtext {
     opacity: 1;
   }
-  .researchtext2{
+
+  .researchtext2 {
     background-color: #A993FF;
     color: black;
     font-size: 12px;
